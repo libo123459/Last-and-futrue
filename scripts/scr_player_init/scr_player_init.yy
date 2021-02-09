@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "manage",
+    "path": "folders/Scripts/manage.yy",
   },
   "resourceVersion": "1.0",
   "name": "scr_player_init",
