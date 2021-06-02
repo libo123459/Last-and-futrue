@@ -34,7 +34,8 @@ if place_meeting(x,y+1,obj_solid) || place_meeting(x,y+1,obj_box)
 		jumps = 2;
 	}
 	onGround = true
-} else {
+	
+} else {	
 	vspd += _g;
 	if(onGround= true)
 	{
@@ -43,8 +44,7 @@ if place_meeting(x,y+1,obj_solid) || place_meeting(x,y+1,obj_box)
 	}
 }
 
-
-if (jump_key && jumps > 0)
+if (jump_key && jumps > 0) //跳跃相关
 {
 	onGround = false;
 	if(obj_player_manage.player_num = 0)
@@ -80,32 +80,28 @@ if (jump_key && jumps > 0)
 		}	
 	}
 		
-	jumps -=1
-	
+	jumps -=1	
 	vspd = jump_height	
-	
 }
 
-
+///以下为碰撞///
 if place_meeting(x + hspd,y,obj_solid)
-{
+{	
 	while !place_meeting(x+sign(hspd),y,obj_solid)
 	{
-		x +=sign(hspd)
-			
+		x +=sign(hspd)			
 	}
 	hspd = 0;		
 }
-if place_meeting(x,y+vspd,obj_solid)
+if place_meeting(x,y + vspd,obj_solid)
 {
 	while !place_meeting(x,y+sign(vspd),obj_solid)
-		{
-			y +=sign(vspd)
-			show_debug_message("down!down!down!")
-		}
-		vspd = 0;
-		
+	{
+		y +=sign(vspd)
+	}
+	vspd = 0;
 }
+
 
 if place_meeting(x+hspd,y,obj_box) && obj_player_manage.player_num = 0
 {	
