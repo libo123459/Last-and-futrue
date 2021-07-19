@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "substance",
-    "path": "folders/Sprites/substance.yy",
+    "name": "world",
+    "path": "folders/Sprites/world.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_wall",

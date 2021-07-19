@@ -1,3 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
 num = 1;
+dir_grow = 0;

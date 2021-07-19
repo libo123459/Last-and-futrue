@@ -7,7 +7,7 @@ function scr_box_collision(argument0){
 		{
 			x +=sign(hspd)
 		}
-	hspd = 0;
+		hspd = 0;		
 	}
 	if place_meeting(x,y+vspd,argument0)
 	{

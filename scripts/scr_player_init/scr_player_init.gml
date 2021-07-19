@@ -17,12 +17,6 @@ function scr_player_init(){
 	instance_deactivate_object(obj_player_past)
 	//instance_deactivate_object(obj_solid_future);
 	//instance_activate_object(obj_solid_past)
-	obj_player_manage.player_num=1
-	if(instance_exists(obj_switch_past)||instance_exists(obj_switch_future))
-	{
-		obj_gate_finish_past.sprite_index = spr_gate_deact;
-		obj_gate_finish_past.active = false;
-	}
-	
+	obj_player_manage.player_num = 1
 
 }

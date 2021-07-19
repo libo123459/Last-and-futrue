@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "spr_wall",
-    "path": "sprites/spr_wall/spr_wall.yy",
+    "name": "spr_wall_past",
+    "path": "sprites/spr_wall_past/spr_wall_past.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "substance",
-    "path": "folders/Objects/substance.yy",
+    "name": "world",
+    "path": "folders/Objects/world.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_solid_past",

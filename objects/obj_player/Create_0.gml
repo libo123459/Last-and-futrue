@@ -12,6 +12,7 @@ jumps = 0;
 jumps_ex = 0;
 jumps_statue = 0;
 sec_jump = false;
+count = 0;
 
 state = scr_move_state
 hspd = 0;
