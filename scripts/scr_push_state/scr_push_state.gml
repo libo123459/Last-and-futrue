@@ -1,7 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_push_state(){
-	
 	var box = instance_nearest(x,y,obj_box)
 	var _dir = box.x-x;
 	if(x != push_target)

@@ -165,13 +165,16 @@ if place_meeting(x,y + vspd,obj_solid)
 if place_meeting(x+hspd,y,obj_box) && obj_player_manage.player_num = 0
 {	
 	var _hspd = hspd;
-	hspd = 0;	
-	if(push_power < 25)
-	{	
-		push_power++		
-	}else{
-		push_target = x + sign(_hspd)*32;		
-		state = scr_push_state	
+	hspd = 0;
+	if(onGround = true)
+	{		
+		if(push_power < 20)
+		{	
+			push_power++		
+		}else{
+			push_target = x + sign(_hspd)*32;		
+			state = scr_push_state	
+		}
 	}
 } else {
 	push_power = 0;

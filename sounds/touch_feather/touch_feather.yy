@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.12,
+  "volume": 0.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "touch_feather.wav",
-  "duration": 0.600771,
+  "duration": 1.312925,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

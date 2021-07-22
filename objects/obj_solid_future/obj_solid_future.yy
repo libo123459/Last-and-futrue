@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "world",
-    "path": "folders/Objects/world.yy",
+    "name": "substance",
+    "path": "folders/Objects/substance.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_solid_future",

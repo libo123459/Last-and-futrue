@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_broken_wall",
-    "path": "sprites/spr_broken_wall/spr_broken_wall.yy",
+    "name": "spr_broken_wall_re",
+    "path": "sprites/spr_broken_wall_re/spr_broken_wall_re.yy",
   },
   "solid": false,
   "visible": true,

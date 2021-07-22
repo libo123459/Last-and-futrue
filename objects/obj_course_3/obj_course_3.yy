@@ -1,13 +1,16 @@
 {
   "spriteId": {
-    "name": "spr_text_course_2",
-    "path": "sprites/spr_text_course_2/spr_text_course_2.yy",
+    "name": "spr_text_course_3",
+    "path": "sprites/spr_text_course_3/spr_text_course_3.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_course_1",
+    "path": "objects/obj_course_1/obj_course_1.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

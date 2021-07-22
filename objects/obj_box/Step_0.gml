@@ -3,6 +3,7 @@
 vspd += _g;	
 scr_box_collision(obj_solid)
 scr_box_collision(obj_box)
+scr_box_collision(obj_trap)
 if(instance_place(x,y,obj_solid_future))
 {
 	var inst = instance_place(x,y,obj_solid_future)

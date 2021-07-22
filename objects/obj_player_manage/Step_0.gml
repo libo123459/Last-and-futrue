@@ -2,9 +2,13 @@
 // You can write your code in this editor
 if keyboard_check_pressed(ord("L"))
 {	
-	if(obj_player.state != scr_push_state)
-	{		
-		scr_switch_time();
+	if(room_get_name(room) != "Room1")
+	{
+		
+		if(obj_player.state != scr_push_state || obj_player.state != scr_dead_state)
+		{		
+			scr_switch_time();
+		}
 	}
 }
 

@@ -3,7 +3,6 @@
 
 if place_meeting(x,y-4,obj_player) && touched = false
 {	
-	show_debug_message("down!")
 	alarm[0]=room_speed*.8;
 	touched = true;
 }

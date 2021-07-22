@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(obj_gate_finish_past.active = true)
+if(other.active = true)
 {
-	scr_switch_time();
+	other.active = false
+	other.image_alpha = 0;
+	obj_gate_finish_future.active = true;
+	instance_create_layer(x,y,"Instances",obj_switch_sfx)
 }
