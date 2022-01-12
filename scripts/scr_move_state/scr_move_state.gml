@@ -39,7 +39,6 @@ if (xaxis != 0)
 		} else {
 			count ++
 		}
-		show_debug_message(count)
 		if(floor(count) = 8)
 		{
 			audio_play_sound(walk,3,false)		
@@ -80,7 +79,7 @@ if (xaxis != 0)
 	image_xscale = image_xscale;
 }
 
-if place_meeting(x,y+1,obj_solid) || place_meeting(x,y+1,obj_box)
+if place_meeting(x,y+1,obj_solid) || place_meeting(x,y+1,obj_box) || place_meeting(x,y+1,obj_box_little)
 {	
 	jumps = jumpsmax + jumps_ex+jumps_statue;
 	if(jumps > 2)
@@ -170,14 +169,13 @@ if place_meeting(x+hspd,y,obj_box) && obj_player_manage.player_num = 0
 	{		
 		if(push_power < 20)
 		{	
-			push_power++		
+			push_power++
+			
 		}else{
 			push_target = x + sign(_hspd)*32;		
 			state = scr_push_state	
 		}
 	}
-} else {
-	push_power = 0;
 }
 if place_meeting(x,y+vspd,obj_box)
 {
@@ -200,6 +198,34 @@ if place_meeting(x+hspd,y,obj_box) && obj_player_manage.player_num = 1
 			x +=sign(hspd)
 		}
 		hspd = 0;
+	}
+}
+if place_meeting(x,y+vspd,obj_box_little)
+{
+	if(!place_meeting(x,y,obj_box_little))
+	{		
+		while !place_meeting(x,y+sign(vspd),obj_box_little)
+		{
+			y +=sign(vspd)
+		}
+		vspd = 0;
+	}
+}
+
+if place_meeting(x+hspd,y,obj_box_little)
+{
+	var _hspd = hspd;
+	hspd = 0;
+	if(onGround = true)
+	{		
+		if(push_power < 20)
+		{	
+			push_power++
+		}else{
+			push_target = x + sign(_hspd)*16;		
+			state = scr_push_little_state
+					show_debug_message("little box!")
+		}
 	}
 }
 

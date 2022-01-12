@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_background_switch(){
-	var i_speed = .8
+	var i_speed = 1.2
 	if(obj_player_manage.player_num = 1)
 	{		
 		obj_background_1.tofurture = true;		

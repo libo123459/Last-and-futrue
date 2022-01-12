@@ -6,7 +6,8 @@ function scr_switch_time(){
 	{		
 		//角色相关
 		obj_player_manage.player_num = 1;
-		instance_destroy(obj_player_future_shadow)		
+		instance_destroy(obj_player_future_shadow)
+		
 		instance_create_layer(obj_player_past.x,obj_player_past.y,"Instances",obj_player_past_shadow)
 		obj_gate_finish_past.image_alpha = 0;
 		obj_gate_finish_future.image_alpha = 1;
@@ -35,6 +36,7 @@ function scr_switch_time(){
 		}	
 	} else {
 		obj_player_manage.player_num = 0; // to past
+		instance_create_layer(obj_player_future.x,obj_player_future.y-35,"Instances",obj_book)
 		instance_create_layer(obj_player_future.x,obj_player_future.y,"Instances",obj_switch_sfx)
 		instance_create_layer(obj_player_future.x,obj_player_future.y,"Instances",obj_player_future_shadow)
 		if(obj_gate_finish_past.active = true)
@@ -62,12 +64,11 @@ function scr_switch_time(){
 		{
 			var obj_b = instance_find(obj_box,i)
 			obj_b.x = obj_b.xpos_switch
-			obj_b.y = obj_b.ypos_switch
+			obj_b.topast = true;
 		}
 	}
 	
 	scr_background_switch();
 	scr_broken_wall_switch();
-	obj_player.state = scr_appear_state
-	
+	obj_player.state = scr_appear_state	
 }

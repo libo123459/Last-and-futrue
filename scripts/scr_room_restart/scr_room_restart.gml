@@ -22,6 +22,17 @@ function scr_room_restart(){
 		obj_b.fixed = false;
 	}	
 	
+	var n_L_box = instance_number(obj_box_little);
+	for(var i = 0;i<n_box;i++)
+	{
+		var obj_b = instance_find(obj_box_little,i)
+		obj_b.x = obj_b.xstart;
+		obj_b.y = obj_b.ystart;
+		obj_b.xpos_switch =  obj_b.xstart;
+		obj_b.ypos_switch = obj_b.ystart
+		obj_b.fixed = false;
+	}	
+	
 	instance_activate_all();
 	obj_player_past.x = obj_player_past.xstart
 	obj_player_past.y = obj_player_past.ystart

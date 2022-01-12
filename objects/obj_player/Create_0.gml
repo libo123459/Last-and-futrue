@@ -19,6 +19,8 @@ state = scr_move_state
 hspd = 0;
 vspd = 0;
 
+push_power = 0;
+push_target = 0;
 
 
 

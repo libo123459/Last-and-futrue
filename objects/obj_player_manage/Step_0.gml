@@ -3,9 +3,8 @@
 if keyboard_check_pressed(ord("L"))
 {	
 	if(room_get_name(room) != "Room1")
-	{
-		
-		if(obj_player.state != scr_push_state || obj_player.state != scr_dead_state)
+	{		
+		if(obj_player.state = scr_move_state)
 		{		
 			scr_switch_time();
 		}
