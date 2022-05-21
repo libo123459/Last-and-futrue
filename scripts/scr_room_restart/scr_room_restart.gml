@@ -28,7 +28,7 @@ function scr_room_restart(){
 		var obj_b = instance_find(obj_box_little,i)
 		obj_b.x = obj_b.xstart;
 		obj_b.y = obj_b.ystart;
-		obj_b.xpos_switch =  obj_b.xstart;
+		obj_b.xpos_switch = obj_b.xstart;
 		obj_b.ypos_switch = obj_b.ystart
 		obj_b.fixed = false;
 	}	

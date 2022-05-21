@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "substance",
-    "path": "folders/Objects/substance.yy",
+    "name": "GEAR",
+    "path": "folders/Objects/substance/GEAR.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_feather_statue",

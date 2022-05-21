@@ -1,6 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-/*if(actived = true)
-{	
-	instance_destroy(self);
-}
+target_gate = noone;
+on_off = false;
+num = variable_global_get("num")

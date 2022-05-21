@@ -21,12 +21,21 @@ function scr_switch_time(){
 			obj_b.ypos_switch = obj_b.y
 		}
 		
+		var n_box_l = instance_number(obj_box_little)
+		for(var i = 0; i<n_box_l; i++)
+		{
+			var obj_b = instance_find(obj_box_little,i)
+			obj_b.xpos_switch = obj_b.x
+			obj_b.ypos_switch = obj_b.y
+		}
+		
 		instance_deactivate_object(obj_solid_past)
 		instance_activate_object(obj_solid_future)		
 		instance_deactivate_object(obj_player_past)
 		instance_activate_object(obj_player_future)
 		
 		//背景
+		
 		//特殊物体		
 		if(instance_number(obj_mushroom)!= 0)
 		{			
@@ -36,6 +45,7 @@ function scr_switch_time(){
 		}	
 	} else {
 		obj_player_manage.player_num = 0; // to past
+		instance_destroy(obj_player_past_shadow)
 		instance_create_layer(obj_player_future.x,obj_player_future.y-35,"Instances",obj_book)
 		instance_create_layer(obj_player_future.x,obj_player_future.y,"Instances",obj_switch_sfx)
 		instance_create_layer(obj_player_future.x,obj_player_future.y,"Instances",obj_player_future_shadow)
@@ -63,6 +73,14 @@ function scr_switch_time(){
 		for(var i = 0; i<n_box; i++)
 		{
 			var obj_b = instance_find(obj_box,i)
+			obj_b.x = obj_b.xpos_switch
+			obj_b.topast = true;
+		}
+		
+		var n_box_l = instance_number(obj_box_little)
+		for(var i = 0; i<n_box_l; i++)
+		{
+			var obj_b = instance_find(obj_box_little,i)
 			obj_b.x = obj_b.xpos_switch
 			obj_b.topast = true;
 		}

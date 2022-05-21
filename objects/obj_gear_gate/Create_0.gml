@@ -1,6 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-/*if(actived = true)
-{	
-	instance_destroy(self);
-}
+image_speed = 0;
+on_off = false;
+num = variable_global_get("num")

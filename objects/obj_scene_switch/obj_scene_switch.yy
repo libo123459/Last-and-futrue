@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "substance",
-    "path": "folders/Objects/substance.yy",
+    "name": "BASIC",
+    "path": "folders/Objects/substance/BASIC.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_scene_switch",

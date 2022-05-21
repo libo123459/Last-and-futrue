@@ -7,14 +7,10 @@ function scr_appear_state(){
 	{
 		obj_player_future.sprite_index = spr_player_future_switch_re
 		image_speed = .8
-		
-		show_debug_message("appear!")
 	}
 	if(obj_player_manage.player_num = 0)
 	{
 		obj_player_past.sprite_index = spr_player_past_switch_re
 		image_speed = .8
-		
-		show_debug_message("appear!")
 	}
 }

@@ -17,28 +17,11 @@ if(instance_place(x,y,obj_solid_future))
 		count -=_vs
 	} 
 }
-if(room_get_name(room) = "Room12" || room_get_name(room) = "Room13")
-{
-	
-	if(topast = true)
-	{	
-		var count = abs(y - ypos_switch)
-		_vs = 5
-		if(count > 1)
-		{	
-			y -=_vs
-			count -=_vs
-		} else {
-			if(count = 1)
-			{
-				y -= 1
-				count = 0;
-			} else {				
-				topast = false;
-			}
-		}
-	}
-
+if(topast = true)
+{	
+	x = xpos_switch
+	y = ypos_switch;
+	topast = false;
 }
 y += vspd;
 x += hspd

@@ -1,10 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 _g = .4
-acceleration = .3;
 jump_height = -7.1;
 max_hspd = 3.8;
-friction_= .5
 
 onGround = false;
 jumpsmax = 1;
